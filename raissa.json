@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/birthday-celebration-Raissa.html"
+      "destination": "/birthday-celebration-raissa.html"
     }
   ]
 }
