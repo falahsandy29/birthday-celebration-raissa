@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFB6D9 0%, #FFC0E0 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            text-align: center;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .balloons {
+            font-size: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #E84B8A;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #D63A7A;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #E84B8A, #D63A7A);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+
+        .invitation {
+            margin: 40px 0;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .invitation p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #D63A7A;
+        }
+
+        .details {
+            background: #fff5f9;
+            border-left: 4px solid #E84B8A;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .details h3 {
+            color: #E84B8A;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .detail-item {
+            margin: 10px 0;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .detail-item strong {
+            color: #333;
+        }
+
+        .cta-section {
+            margin-top: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button-primary {
+            background: linear-gradient(135deg, #E84B8A 0%, #D63A7A 100%);
+            color: white;
+        }
+
+        .button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(232, 75, 138, 0.4);
+        }
+
+        .button-secondary {
+            background: white;
+            color: #E84B8A;
+            border: 2px solid #E84B8A;
+        }
+
+        .button-secondary:hover {
+            background: #E84B8A;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .emoji {
+            font-size: 30px;
+            margin: 0 5px;
+        }
+
+        .birthday-photo {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(232, 75, 138, 0.3);
+            margin: 20px 0;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .button {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="balloons">🎈 🎉 🎊</div>
+        
+        <img src="raissa.png" alt="Birthday photo" class="birthday-photo">
+        
+        <h1>Happy Birthday!</h1>
+        <p class="subtitle">Let's Celebrate You! 🎂</p>
+        
+        <div class="divider"></div>
+        
+        <div class="invitation">
+            <p>Dear Achaa,</p>
+            <p>Today is your special day, and I want to celebrate with you! 
+            <span class="highlight">You deserve nothing but the best.</span></p>
+            <p>Let's get together and share some good food, great laughs, and wonderful memories.</p>
+        </div>
+
+        <div class="details">
+            <h3>🍽️ Let's Eat Together</h3>
+            <div class="detail-item">
+                <strong>When:</strong> Anytime works for you!
+            </div>
+            <div class="detail-item">
+                <strong>Where:</strong> Your favorite place
+            </div>
+            <div class="detail-item">
+                <strong>Why:</strong> Because celebrating you is always a good idea <span class="emoji">😊</span>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <button class="button button-primary" onclick="alert('Let\'s set a date! Pick a time that works best for you. LMK yeeeee')">Let's Plan It!</button>
+            <button class="button button-secondary" onclick="alert('Thank you so much! Can\'t wait to celebrate together! Cihuyyyyy')">I\'m In!</button>
+        </div>
+
+        <div class="footer">
+            <p>Wishing you a day full of joy, laughter, and happiness! 🎂✨</p>
+        </div>
+    </div>
+</body>
+</html>
